@@ -58,9 +58,7 @@ button {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
-     min-width: 200px;
-    flex-wrap: nowrap;
-    overflow: hidden;
+ 
 
     } 
 
@@ -123,6 +121,83 @@ button {
     fill: #2f2f37;
     display: flex;
 }
+/*   #sections-1    */
+.hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 320px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-title {
+    max-width: 216px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+}
+ /*   #sections-2    */
+.icon-container {
+    display: none;
+}
+.values {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.values-title {
+    margin-bottom: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+.values-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.values-item:not(last-child) {
+    margin-bottom: 72px;
+}
+  /*   #sections-3    */
+
+
+
+
 
 /*   #header-tablet    */
 
@@ -205,6 +280,60 @@ button {
 .contacts-link:focus {
     color: #404BBF;
 }
+/*   #sections-1    */
+.hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+
+}
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;        
+    
+}
+/*   #sections-2    */
+.values {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.values-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.values-title {
+    margin-bottom: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+
+}
+
+.values-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 }
 
 /*   #header-computer    */
@@ -224,7 +353,7 @@ button {
     gap: 40px;
 }
 .contacts-link {
-    display: flex;
+    display: block;
     padding: 24px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -234,6 +363,97 @@ button {
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+ 
+}
+
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+}
+/*           sectios-2       */
+
+.icon-container {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+
+}
+
+.values {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.values-list {
+    display: flex;
+    gap: 24px;
+}
+
+.values-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.values-title {
+    margin-bottom: 8px;
+    /*width: calc((100% - 24 * 3) / 4);*/
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.values-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 

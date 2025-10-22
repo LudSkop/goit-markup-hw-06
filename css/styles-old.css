@@ -152,21 +152,14 @@ img {
 /*. main-section1-hero. */
 
 .hero {
-    
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
     margin: 0 auto;
-
-   
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
-
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    
 }
 .hero-title {
     max-width: 496px;
@@ -178,7 +171,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-   
 }
 .hero-button {
     display: block;
@@ -223,7 +215,6 @@ img {
 .values {
     padding-top: 120px;
     padding-bottom: 120px;
-    
 }
 .values-list {
     display:flex;
