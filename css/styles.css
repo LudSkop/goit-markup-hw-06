@@ -190,7 +190,7 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
 }
-.values-item:not(last-child) {
+.values-item:not(:last-child) {
     margin-bottom: 72px;
 }
   /*   #sections-3    */
