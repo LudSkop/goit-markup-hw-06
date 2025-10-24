@@ -641,8 +641,6 @@ button {
     justify-content: center;
     align-items: center;
     gap: 72px;
-    
-
 }
 .team-link {
     border-radius: 0px 0px 4px 4px;
@@ -683,9 +681,22 @@ button {
 }
 @media screen and (min-width: 768px) {
     .team {
-            margin-left: 108px;
-            margin-right: 108px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+        background: #f4f4fd;
         }
+    .team-list {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        column-gap: 36px;
+        row-gap: 64px;
+        }
+
+                
+
 }
 
         
