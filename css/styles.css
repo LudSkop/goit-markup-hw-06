@@ -121,6 +121,153 @@ button {
     fill: #2f2f37;
     display: flex;
 }
+
+
+
+
+/*  MENU               */
+
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid red;
+}
+.menu-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    border: 2px solid #E7E9FC;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    color: #E7E9FC;
+}
+.menu-button:hover,
+.menu-button:focus-within {
+    border: 2px solid blueviolet;
+    border-radius: 0;     /*тут зробила квадрат на посилання */
+
+}
+.menu-button-icon {
+    fill: #2e2f42;
+}
+.menu-navigation {
+    margin-bottom: auto;
+}
+.menu-navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    margin-bottom: 168px; 
+}
+.menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: #404bbf;
+}
+.menu-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+   
+
+}
+.menu-host {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    
+}
+.menu-host:hover,
+.menu-host:focus {
+    color: #4d5ae5;
+}
+
+.new-header {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* квадратна рамка */
+.new-list {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.3s ease;
+    border: 2px solid transparent;
+    /* початково без рамки */
+}
+.new-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#4d5ae5;
+}
+.new-icon {
+    fill: #fff;
+}
+
+/* При hover або focus на квадраті з'являється рамка */
+.new-list:hover,
+.new-list:focus-within {
+    border: 2px solid blueviolet;
+    border-radius: 0;
+    /* квадратна рамка */
+
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
 /*   #sections-1    */
 .hero {
     padding-top: 72px;
@@ -193,11 +340,7 @@ button {
 .values-item:not(:last-child) {
     margin-bottom: 72px;
 }
-  /*   #sections-3    */
-
-
-
-
+ 
 
 /*   #header-tablet    */
 
@@ -456,8 +599,88 @@ button {
     color: #434455;
 }
 
+} 
 
+/*  section-3  */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin-left: 28px;
+    margin-right: 28px;
+    background: #f4f4fd;
 
+}
+.icons-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.sprite {
+    fill: #f4f4fd;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    background-color: #404bbf;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    
+
+}
+.team-link {
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
+.team-info {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+.title-team {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+.title-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
 }
 
         
