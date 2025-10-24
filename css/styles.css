@@ -607,11 +607,6 @@ button {
     flex-wrap: wrap;
     padding-top: 96px;
     padding-bottom: 96px;
-    margin-left: -16px;
-                        /* прибирає падінг контейнера */
-    margin-right: -16px;
-    padding-left: 28px;
-    padding-right: 28px;
     background: #f4f4fd;
 }
 .icons-list {
@@ -643,6 +638,8 @@ button {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 72px;
     
 
