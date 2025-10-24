@@ -708,6 +708,46 @@ button {
 
     }
 }
+    /*       section-4       */
+
+@media screen and (max-width: 767px) {
+    .overlay {
+        display: none;
+    }
+}
+
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.portfolio-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.title-secondary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.portfolio-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
 
         
 
