@@ -971,6 +971,56 @@ button {
 .footer-icon {
     margin-left: 16px;
 }
+@media screen and (min-width: 768px) {  
+    .container-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+.container-logo {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.social-container {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.footer-modal-container {
+    flex-basis: 100%;
+    margin-top: 32px;
+    align-items: flex-start;
+    
+}
+.footer-modal-text {
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.footer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 auto;
+    
+}
+.footer-input {
+    width: 264px;
+}
+
+
+}
 
 
 
