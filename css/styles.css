@@ -817,7 +817,7 @@ button {
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-/*        footer      */
+/*        footer-mobile      */
 
 .container-footer {
     display: flex;
@@ -857,8 +857,6 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: px;
-    margin: o auto;
     text-align: center;
     /* текст зверху, іконки під ним */
    
@@ -971,23 +969,19 @@ button {
 .footer-icon {
     margin-left: 16px;
 }
+/*       footer-tablet     */
 @media screen and (min-width: 768px) {  
-    .page-footer {
-            padding-top: 96px;
-            padding-bottom: 96px;
-            padding-left: 108px;
 
-        }
-    .container-footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 24px;
-        padding-left: 108px;
-        
-    }
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    padding-left: 108px;
+    
+}
 .container-logo {
     flex-basis: 264px;
     display: flex;
@@ -1030,8 +1024,77 @@ button {
 .footer-input {
     width: 264px;
 }
+/*   footer-desktop   */
+}
+@media screen and (min-width: 1158px) {
+.container-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-items: baseline;
+        gap: 24px;
+        padding-left: 0;
+        
+
+    }
+
+    .container-logo {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 120px;
 
 
+    }
+
+    .social-container {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 80px;
+
+
+    }
+    .footer-text {
+        max-width: ;
+    }
+
+    .footer-modal-container {
+        flex-basis: 100%;
+        margin-top: 32px;
+        align-items: flex-start;
+
+    }
+
+    .footer-modal-text {
+        margin: 0 auto;
+        text-align: left;
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .footer-text {
+        width: 264px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+    
 }
 
 
