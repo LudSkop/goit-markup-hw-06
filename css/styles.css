@@ -708,7 +708,7 @@ button {
 
     }
 }
-    /*       section-4       */
+    /*       section-4 MOBILE       */
 
 @media screen and (min-width: 0px) and (max-width: 1157px) {
     .overlay {
@@ -746,6 +746,13 @@ button {
     flex-wrap: wrap;
     background-color: #fff;
 }
+  .portfolio-link {
+      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+          0px 1px 1px rgba(46, 47, 66, 0.16),
+          0px 2px 1px rgba(46, 47, 66, 0.08);
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+/*          section-4 TABLET      */
 @media screen and (min-width: 768px) {
     .portfolio {
         padding-top: 104px;
@@ -766,6 +773,7 @@ button {
     }
 
 }
+/*          section-4 desktop      */
 @media screen and (min-width: 1158px) {
 .portfolio {
         padding-top: 120px;
@@ -781,6 +789,7 @@ button {
     
     .portfolio-link {
         width: calc((100% - 48px) / 3);
+        box-shadow: none;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     }
@@ -1035,9 +1044,7 @@ button {
         align-items: flex-start;
         align-items: baseline;
         gap: 24px;
-        padding-left: 0;
-        
-
+        padding-left: 15px;
     }
 
     .container-logo {
@@ -1059,9 +1066,7 @@ button {
 
 
     }
-    .footer-text {
-        max-width: ;
-    }
+    
 
     .footer-modal-container {
         flex-basis: 100%;
@@ -1096,8 +1101,6 @@ button {
     }
     
 }
+  /*   modal-mobile */
 
-
-
-
-
+  
