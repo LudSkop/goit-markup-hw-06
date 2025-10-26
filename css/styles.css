@@ -1294,7 +1294,6 @@ button {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 4px;
-    
   }
  .agreement-wrapper {
     display: flex;
@@ -1357,6 +1356,12 @@ button {
          width: 408px;
          padding: 72px 24px 24px 24px;
      }
+    .agreement-wrapper {
+        white-space: normal;
+        }
+    .accert-icon {
+        display: block;
+    }
  }
   @media screen and (min-width: 1158px) {
       .modal {
