@@ -117,7 +117,7 @@ button {
     border:none;
     background-color: transparent;
 }
-.burfer-icon {
+.buger-icon {
     fill: #2f2f37;
     display: flex;
 }
@@ -125,7 +125,7 @@ button {
 
 
 
-/*  MENU               */
+/*       MENU         */
 
 .mobile-menu {
     position: fixed;
@@ -134,7 +134,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    z-index: 20;
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1068,7 +1068,8 @@ button {
 
     max-width: 767px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/fon-mob-min.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/fon-mob-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1085,7 +1086,6 @@ button {
 
 @media screen and (min-width: 768px) {
     .hero {
-        max-width: 1157px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/fon-tab-min.jpg);
     }   
@@ -1101,7 +1101,6 @@ button {
 
 @media screen and (min-width: 1158px) {
     .hero {
-        min-width: 1158px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-des-min.jpg);
     }
@@ -1109,11 +1108,259 @@ button {
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
          screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     .hero {
-        min-width: 1158px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-desk@2x-min.jpg);
     }
 }
   /*   modal-mobile */
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 2;
+    /* Ховаємо модальне вікно */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* щоб появивилось модальне вікно*/
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-  
+ .modal {
+     border: 1px solid #000;
+     border-radius: 4px;
+     width: 288px;
+     min-height: 623px;
+
+     background-color: #fcfcfc;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     padding: 72px 16px 24px 16px;
+     box-sizing: border-box;
+ }
+
+ .modal-button {
+     position: absolute;
+     top: 24px;
+     right: 24px;
+     width: 24px;
+     height: 24px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     background-color: #e7e9fc;
+     color: #111111;
+     padding: 0;
+     cursor: pointer;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal-button:hover,
+ .modal-button:focus {
+     background-color: #404bbf;
+     border: none;
+
+ }
+
+ .modal-button:hover,
+ .modal-button:focus .modal-button-icon {
+     fill: #ffffff;
+ }
+
+
+ .modal-button-icon {
+     width: 8px;
+     height: 8px;
+     fill: currentColor;
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal-text {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     text-align: center;
+     color: #2e2f42;
+     margin-bottom: 16px;
+ }
+ .modal-form-field {
+     margin-bottom: 8px;
+ }
+ .modal-comment {
+     margin-bottom: 16px;
+ }
+ .modal-form-label {
+     display: block;
+     margin-bottom: 8px;
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.04em;
+     margin-bottom: 4px;
+     color: #8e8f99;
+ }
+ .modal-form-wrapper {
+     position: relative;
+ }
+ .form-input {
+     position: relative;
+     display: block;
+     width: 100%;
+     height: 40px;
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     border-radius: 4px;
+     background-color: transparent;
+     outline: transparent;
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     padding: 11px 38px;
+ }
+ .form-input:focus {
+     border-color: #4D5AE5;
+ }
+ .modal-form-icon {
+     position: absolute;
+     top: 50%;
+     left: 16px;
+     transform: translateY(-50%);
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .form-input:focus+.modal-form-icon {
+     fill: #4D5AE5;
+ }
+ textarea::placeholder {
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 1.16;
+     letter-spacing: 0.04em;
+     color: rgba(46, 47, 66, 0.4);
+ }
+ .form-textarea {
+     width: 100%;
+     height: 120px;
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.04em;
+     color: rgba(46, 47, 66, 0.4);
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     border-radius: 4px;
+     background-color: transparent;
+     padding: 8px 16px;
+     outline: transparent;
+     resize: none;
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .form-textarea:focus {
+     border-color: #4D5AE5;
+ }
+ /*. Custom-Checkbox       */
+ .form-agreement {
+     margin-bottom: 24px;
+ }
+ .agreement-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+     width: 16px;
+     height: 16px;
+     margin-right: 12px;
+     border-radius: 2px;
+     cursor: pointer;
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     color: transparent;
+     fill: transparent;
+     transition:
+         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+  .accert-icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4px;
+    
+  }
+ .agreement-wrapper {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.04em;
+     color: #8e8f99;
+ }
+ .agreement-checkbox .agreement-checkbox-icon {
+     fill: transparent;
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ /*input:checked + label > span */
+ .checkbox-input:checked+.agreement-wrapper>.agreement-checkbox {
+     background-color: #404bbf;
+     border: none;
+     fill: #F4F4FD;
+ }
+ /* Колір галочки всередині SVG при checked */
+ .checkbox-input:checked+.agreement-wrapper .agreement-checkbox>.agreement-checkbox-icon {
+     fill: #F4F4FD;
+     /* колір галочки */
+ }
+ .accent-tex {
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 1.16;
+     letter-spacing: 0.04em;
+     color: #8e8f99;
+ }
+ .agreement-link {
+     line-height: 1.33;
+     text-decoration: underline;
+     text-decoration-skip-ink: none;
+     color: #4d5ae5;
+ }
+ .button-submit {
+     display: block;
+     margin: 0 auto;
+     border-radius: 10px;
+     padding: 16px 32px;
+     min-width: 169px;
+     height: 56px;
+     background-color: #4D5AE5;
+     cursor: pointer;
+     font-family: "Roboto", sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.04em;
+     text-align: center;
+     color: #fff;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     border: none;
+ }
+ @media screen and (min-width: 768px) {
+     .modal {
+         width: 408px;
+         padding: 72px 24px 24px 24px;
+     }
+ }
+  @media screen and (min-width: 1158px) {
+      .modal {
+          width: 408px;
+          padding: 72px 24px 24px 24px;
+      }
+  }

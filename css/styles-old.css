@@ -587,7 +587,6 @@ body:has(.backdrop.is-open) {
 .backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
-
     }
 
 
@@ -739,11 +738,7 @@ textarea::placeholder {
 .form-agreement {
   margin-bottom: 24px;
 }
-
-
 .agreement-checkbox {
-
- 
 display: inline-flex;
 justify-content: center;
 align-items: center;
@@ -753,7 +748,6 @@ margin-right: 12px;
 border-radius: 2px;
 cursor: pointer;
 border: 1px solid rgba(46, 47, 66, 0.4);
-
 color: transparent;
 fill: transparent;
 transition:
@@ -761,19 +755,13 @@ transition:
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 .agreement-wrapper {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-
-
 .agreement-checkbox .agreement-checkbox-icon {
-
-
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -785,14 +773,10 @@ transition:
   fill: #F4F4FD;
               
 }
-
 /* Колір галочки всередині SVG при checked */
 .checkbox-input:checked + .agreement-wrapper .agreement-checkbox > .agreement-checkbox-icon {
   fill: #F4F4FD;            /* колір галочки */
 }
-
-
-
 
 .accent-tex {
     font-weight: 400;
@@ -811,12 +795,9 @@ transition:
     color: #4d5ae5;
 }
 
-
-
 .button-submit {
    display: block;
    margin: 0 auto;
-
     border-radius: 10px;
     padding: 16px 32px;
     min-width: 169px;
@@ -832,7 +813,6 @@ transition:
     color: #fff; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
-
 }
 
 
