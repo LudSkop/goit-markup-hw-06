@@ -58,26 +58,20 @@ button {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
- 
-
     } 
-
-
 
 @media screen and (min-width: 768px) {
     .container {
     max-width: 768px;
- 
 }
-
 }
 @media screen and (min-width: 1158px) {
     .container {
-    max-width: 1158px;
+    max-width: 1440px;
     padding: 0 15px;
-   
 }
 }
+
 /*.  header mobile  */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -88,7 +82,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 .title-header,
 .contacts {
@@ -188,7 +181,7 @@ button {
     display: flex;
     flex-direction: column;
     gap:40px;
-    margin-bottom: 168px; 
+     
 }
 .menu-link {
     font-weight: 700;
@@ -196,31 +189,37 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    
+
+}
+.color-studio {
+    color: #404bbf;
 }
 .menu-link:hover,
 .menu-link:focus {
     color: #404bbf;
 }
+.menu-address {
+    margin-bottom: 48px;
+}
 .menu-address-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
-   
-
 }
 .menu-host {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #2e2f42;
     
+}
+.color-tel {
+    color: #404bbf;
 }
 .menu-host:hover,
 .menu-host:focus {
-    color: #4d5ae5;
+    color: #404bbf;
 }
 
 .new-header {
@@ -230,8 +229,6 @@ button {
     padding: 0;
     margin: 0;
 }
-
-/* квадратна рамка */
 .new-list {
     width: 40px;
     height: 40px;
@@ -240,7 +237,6 @@ button {
     align-items: center;
     transition: border 0.3s ease;
     border: 2px solid transparent;
-    /* початково без рамки */
 }
 .new-link {
     width: 100%;
@@ -254,18 +250,13 @@ button {
 .new-icon {
     fill: #fff;
 }
-.new-list:hover,
-.new-list:focus-within {
-    border: 2px solid blueviolet;
-    border-radius: 0;
-    /* квадратна рамка */
 
-}
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
-}
+}    
+
 /*   #sections-1    */
 .hero {
     padding-top: 72px;
@@ -335,9 +326,12 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
 }
-.values-item:not(:last-child) {
-    margin-bottom: 72px;
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
+
  
 
 /*   #header-tablet    */
@@ -423,9 +417,10 @@ button {
 }
 /*   #sections-1    */
 .hero {
+    max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
-    max-width: 768px;
+    
 
 }
 .hero-title {
@@ -448,15 +443,18 @@ button {
 
 .values-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
 }
 .values-item {
+    margin-bottom: 0;
     width: calc((100% - 24px) / 2);
 }
 
 .values-title {
+    text-align: left;
     margin-bottom: 8px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -477,12 +475,12 @@ button {
 }
 }
 
-/*   #header-desktop    */
 
 
+/* header-desktop     */
 @media screen and (min-width: 1158px) {
     .container {
-    max-width: 1158px;  
+    max-width: 1440px;  
 }
 .header-logo {
     padding: 24px 0;
@@ -545,7 +543,8 @@ button {
 .hero-button:focus {
     background-color: #404BBF;
 }
-/*           sectios-2       */
+
+
 
 .icon-container {
     display: flex;
@@ -599,10 +598,14 @@ button {
 
 } 
 
-/*  section-3  */
+
+
+
+
+
+
+/*  section-3 mobile */
 .team {
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 96px;
     padding-bottom: 96px;
     background: #f4f4fd;
@@ -677,6 +680,8 @@ button {
     text-align: center;
     color: #434455;
 }
+
+/*  section-3 tablet */
 @media screen and (min-width: 768px) {
 
     .team-list {
@@ -684,11 +689,11 @@ button {
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        column-gap: 36px;
+        column-gap: 24px;
         row-gap: 64px;
         }
 }
-
+/*  section-3 desktop */
 @media screen and (min-width: 1158px) {
     .team {
         padding-top: 120px;
@@ -942,7 +947,7 @@ button {
     color: #ffffff;
 }
 .footer-button {
-    max-width: 165px;
+    min-width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -1031,7 +1036,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-right: 80px;
+        margin-right: auto;
     }
     .footer-modal-container {
         flex-basis: 100%;
@@ -1062,11 +1067,11 @@ button {
     }
     
 }
- 
+/* 
 
 .hero {
 
-    max-width: 767px;
+    max-width: 1440px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/fon-mob-min.jpg);
@@ -1091,7 +1096,7 @@ button {
     }   
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi),
-        screen and(min-width: 768px) and (min-resolution: 2dppx) {
+        screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-tab@2x-min.jpg);
@@ -1101,13 +1106,15 @@ button {
 
 @media screen and (min-width: 1158px) {
     .hero {
+        background-size: cover;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/fon-des-min.jpg);
+        url(../images/fon-desk-min.jpg);
     }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
          screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     .hero {
+        
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-desk@2x-min.jpg);
     }
