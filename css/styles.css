@@ -55,7 +55,7 @@ button {
 /*  #common   для всіх секцій */
 
     .container {
-    max-width: 320px;
+    min-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
     } 
@@ -480,7 +480,7 @@ button {
 /* header-desktop     */
 @media screen and (min-width: 1158px) {
     .container {
-    max-width: 1440px;  
+    max-width: 1158px;  
 }
 .header-logo {
     padding: 24px 0;
@@ -1067,11 +1067,11 @@ button {
     }
     
 }
-/* 
+ 
 
 .hero {
-
-    max-width: 1440px;
+    
+    max-width: 767px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/fon-mob-min.jpg);
@@ -1105,8 +1105,9 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+    
     .hero {
-        background-size: cover;
+        width: 100%;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-desk-min.jpg);
     }
@@ -1114,7 +1115,6 @@ button {
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
          screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     .hero {
-        
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-desk@2x-min.jpg);
     }
