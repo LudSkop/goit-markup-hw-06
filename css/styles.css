@@ -58,7 +58,15 @@ button {
     min-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
-    } 
+    }
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 320px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+} 
 
 @media screen and (min-width: 768px) {
     .container {
@@ -1070,9 +1078,8 @@ button {
  
 
 .hero {
+    width: 100%;
     
-    max-width: 767px;
-    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/fon-mob-min.jpg);
     background-repeat: no-repeat;
@@ -1083,6 +1090,8 @@ button {
 @media screen and  (max-width: 767px) and (min-resolution: 192dpi),
     screen and (max-width: 767px ) and (min-resolution: 2dppx) {
     .hero {
+        max-width: 767px;
+        margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-mob@2x-min.jpg);
     }
@@ -1107,7 +1116,7 @@ button {
 @media screen and (min-width: 1158px) {
     
     .hero {
-        width: 100%;
+       
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-desk-min.jpg);
     }
@@ -1115,6 +1124,7 @@ button {
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
          screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     .hero {
+       
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/fon-desk@2x-min.jpg);
     }
